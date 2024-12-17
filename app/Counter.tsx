@@ -2,9 +2,8 @@ import React, { Component, ReactNode } from "react";
 import { Button, Text, View } from "react-native";
 
 export default class Counter extends Component {
-  constructor(props: any) {
+  constructor(props:any) {
     super(props);
-    console.log("component is being created with the props",props);
   }
 
   state = {
@@ -16,7 +15,6 @@ export default class Counter extends Component {
   } 
 
   getSnapshotBeforeUpdate(prevProps: Readonly<{}>, prevState: Readonly<{}>) {
-      console.log("Snapshot of previous state",prevState)
       return null
   }
  

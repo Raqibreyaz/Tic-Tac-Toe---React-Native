@@ -1,19 +1,19 @@
-import { View, Text, Button } from "react-native";
-import React, { useState } from "react";
-import Counter from "./Counter";
-import CounterFC from "./CounterFC";
+import React, { useEffect } from "react";
+import TicTacToe from "@/components/TicTacToe";
+import ChangeDimensions from "@/components/ChangeDimensions";
+import { View } from "react-native";
 
-const index = () => {
-  const [showCounter, setShowCounter] = useState(true);
+export default function index() {
   return (
-    <View>
-      <Button
-        title="Toggle Counter"
-        onPress={() => setShowCounter(!showCounter)}
-      ></Button>
-      {showCounter ? <CounterFC /> : <Text>Counter is Unmounted</Text>}
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: "black",
+        justifyContent: "space-evenly",
+      }}
+    >
+      <TicTacToe />
+      <ChangeDimensions />
     </View>
   );
-};
-
-export default index;
+}
