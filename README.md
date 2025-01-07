@@ -1,50 +1,33 @@
-# Welcome to your Expo app 👋
+# Tic Tac Toe Game - React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple **Tic Tac Toe** game built with **React Native**. This game showcases how to build a classic game using React Native, **Zustand** for state management, and an efficient algorithm to determine the winner of the game. 
 
-## Get started
+## Features
+- **Centralized State Management** using **Zustand** for cleaner, more maintainable code.
+- Efficient **Winner Algorithm** that finds the winner without iterating through the entire grid, focusing only on possible winning conditions.
+- **Responsive UI** for a smooth experience across different screen sizes.
+- **Dynamic Grid Size**: Users can change the grid size to 3x3, 4x4, 9x9, or other custom sizes for more varied gameplay.
 
-1. Install dependencies
+## Technologies Used
+- **React Native**: For building the mobile application.
+- **Zustand**: For centralized state management.
+- **JavaScript**: For game logic and rendering.
 
+## Algorithm Highlights
+- Instead of iterating through the entire grid to check for a winner, the algorithm focuses on the most likely winning conditions. This makes the process more efficient and reduces unnecessary iterations.
+  
+## Getting Started
+
+To run the Tic Tac Toe game on your local machine, follow these steps:
+
+### 1. Clone the repository
    ```bash
-   npm install
+   https://github.com/Raqibreyaz/Tic-Tac-Toe---React-Native.git
    ```
 
-2. Start the app
-
+### 2. Install the dependencies
+   Navigate to the project directory and install the necessary dependencies
    ```bash
-    npx expo start
+   cd Tic-Tac-Toe---React-Native
+   pnpm install
    ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
